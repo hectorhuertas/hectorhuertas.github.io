@@ -2,59 +2,40 @@
   height: 100px;
 }
 
-/*.navbar {
-  background-color: red
-}*/
 body {
   text-align: center;
   font-family: 'Handlee', cursive;
   /*font-family: 'Open Sans', sans-serif;*/
 }
 
-.header{
-  /*min-height: 50px;*/
-  /*background-color: brown;*/
-font-family: 'Nothing You Could Do', cursive;
-}
-
-.header h3{
-  /*border-right: 1px solid #000;*/
-  padding-top: 50px;
-  font-size: 50px;
-  /*margin:50px;*/
-  /*background-color: green;*/
-
-}
-
-.container{
-padding-top: 40px;
-
-}
-/* Navigation */
-
-.navbar {
-  /*background-color: CornflowerBlue;*/
-  /*padding: 12px;*/
-  /*text-align: right;*/
-  /*font-family: 'Lobster', cursive;*/
-  font-family: 'Nothing You Could Do', cursive;
-  display: inline-block;
-  /*font-size: 20px;*/
-}
-.navbar li {
-  /*display: inline;*/
-  list-style-type: none;
+nav li {
+  display: inline;
+  padding: 10px;
   text-align: center;
-  float: left;
 }
-.navbar li a {
+nav li a {
   text-decoration: none;
   color: black;
-  /*margin: 10px 10px 10px;*/
-  /*transition-property: color;*/
-  /*transition-duration: 0.7s;*/
+}
+header h1{
+  font-family: 'Nothing You Could Do', cursive;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 80px;
 }
 
-.navbar li a:hover {
-  /*color: #99ff99;*/
+.post-show{
+  padding: 20px;
+  /*background-color: red;*/
+}
+h2{
+  font-size: 30px;
+}
+.post-title a{
+  text-decoration: none;
+  color: black;
+}
+
+.post{
+  padding: 20px;
 }
