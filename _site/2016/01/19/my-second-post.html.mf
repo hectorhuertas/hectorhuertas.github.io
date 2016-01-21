@@ -24,20 +24,32 @@
   <div class="container">
 
 <div class="post">
-  <h2>Motivations</h2>
-  <p>November 21, 2015</p>
+  <h2>Elixir</h2>
+  <p>January 19, 2016</p>
 </div>
+<p>Elixir is a young functional programming language that is drawing a lot of
+attention from the community. Its ruby-like syntax runs on the Erlang Virtual
+ Machine, achieving an amazing combination of user happiness and productivity
+ with speed and stability,</p>
+
+ <h2>Erlang</h2>
+ <p>Erlang is a functional language created by Ericsson to power their
+    mobile telephone infrastructure</p>
+ <h2>Elixir</h2>
+
+Elixir comes from erlang
+Strengths of erlang
+
+Weakneases of erlang solved on elixir
+
+Strenghts of elixir
 <p>Here is the text of my first blog post.</p>
 
 <p>And a picture of a kitten:</p>
 
 <img id="kitten" src="http://theheightsanimalhospital.com/clients/15389/images/playful-kitten-6683.jpg" alt="kitten">
 
-<p>Feel free to change this from an HTML
-  file to a markdown file.Feel free to ch
-  ange this from an HTML file to a markdown fil
-  e.Feel free to change this from an HTML file to a ma
-  rkdown file.Feel free to change this from an HTML file to a markdown file.Feel free to change this from an HTML file to a markdown file.Feel free to change this from an HTML file to a markdown file.</p>
+<p>Feel free to change this from an HTML file to a markdown file.</p>
 
 
     </div>
