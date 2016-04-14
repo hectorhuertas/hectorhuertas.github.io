@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hector Huertas</title>
+  <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Handlee' rel='stylesheet' type='text/css'>
+  <link href="/css/reset.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <h1>Hector Huertas</h1>
+  </header>
+  <hr/>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">Twitter</a></li>
+      <li><a href="/">Github</a></li>
+      <li><a href="/">About</a></li>
+    </ul>
+  </nav>
+  <hr/>
+  <div class="container">
+
+<div class="post">
+  <h2>API standarization</h2>
+  <p>April 14, 2016</p>
+</div>
+<p>Elixir is a young functional programming language that is drawing a lot of
+attention from the community. Its ruby-like syntax runs on the Erlang Virtual
+Machine, achieving an amazing combination of user happiness and productivity
+with speed and stability.</p>
+
+<h1 id="erlang">Erlang</h1>
+
+<p>Erlang is a functional language created by Ericsson to power their mobile
+telephone infrastructure, mainly telephone switches. Given the remote locations
+of many of these switches and the peculiarities of the telecom business, Erlang
+sought to meet this criteria:</p>
+
+<ul>
+  <li>Support for a huge number of simultaneous users</li>
+  <li>Minimal and remote maintenance</li>
+  <li>No downtime</li>
+</ul>
+
+<h1 id="erlang-features">Erlang features</h1>
+
+<p>In order to meet the requirements for the business logic, Erlang developed
+a very interesting set of features:</p>
+
+<ul>
+  <li>
+    <p>Structure based on lightweight processes: every calculation in Erlang is
+done in an independent lightweight process (not to be confused with a thread
+or an operating system process, both much heavier). This design allowed serving
+and processing millions of small requests simultaneously, perfect for the job
+of connecting users in the telephone switches</p>
+  </li>
+  <li>
+    <p>Asynchronous message passing: in order to share information between
+different processes, Erlang uses asynchronous message passing instead of
+shared variables</p>
+  </li>
+  <li>
+    <p>Distributed processing: the lightweight processes and the asynchronous
+communication provide a very easy and robust way to implement distributed
+systems. Since process communicate by messages, not by shared memory, it is
+irrelevant if they live in the same machine or not. The asynchronous nature of
+the messages avoids the need for a supervising hub that manages the
+communications, and helps minimizing the effects of distance and network
+problems between the processes. The distributed structure also makes very easy
+to manage and maintain the system without physical access to the installation (again, very convenient for the business).</p>
+  </li>
+  <li>
+    <p>Fault tolerance: fault tolerance in Erlang means that the system will not go
+down even if a fatal error occurs. This is achieved by using supervision
+processes, that watch over a set of processes and restarts them if any of them
+fails (when, how many and in which order they are restarted depends on the
+supervision strategy chosen). The difference between this and the more common
+error catching is that Erlang does not manage the errors in any way, when an
+error happens, the process will crash and die… and another one of the same
+kind will immediately be spawned by the supervisor process. Being a new process,
+the risk of errors creating inconsistencies is null.</p>
+  </li>
+  <li>
+    <p>Hot swapping: the modularity of the Erlang applications plus its fast restart
+capabilities allow for extremely fast updates and maintenance, without stopping
+the services provided. This allows Erlang powered systems to have a very close
+to zero downtime.</p>
+  </li>
+</ul>
+
+<h1 id="a-note-about-concurrency-and-erlang">A note about concurrency and Erlang</h1>
+<p>Concurrency is the ability to execute several computations simultaneously and
+possibly interacting with each other. Concurrency has become part of programming
+discussions just in the recent years, due to its relation to true multi-core
+programming. Since most of the programming languages that we use today were
+created before this kind of hardware existed, it is no surprise that they are
+having a hard time implementing concurrency, it was not important when the
+languages were designed.</p>
+
+<p>Erlang (and Elixir) popularity recently is due to it being fully concurrent, and
+thus able to get the most of modern hardware. How is this possible in a language
+born in 1986? The answer is that Erlang just happens to be concurrent because
+concurrency is a consequence of its distributed nature. The problem of having
+several machines doing computations simultaneously is the same as having several
+cores in a single machine doing those computations.</p>
+
+<h1 id="erlang-weaknesses">Erlang weaknesses</h1>
+
+<h1 id="from-erlang-to-elixir">From Erlang to Elixir</h1>
+
+<p>Erlang grew to become a solid tool to</p>
+
+<h2>Elixir</h2>
+
+<p>Elixir comes from erlang
+Strengths of erlang</p>
+
+<p>Weakneases of erlang solved on elixir</p>
+
+<p>Strenghts of elixir</p>
+<p>Here is the text of my first blog post.</p>
+
+<p>And a picture of a kitten:</p>
+
+<p><img id="kitten" src="http://theheightsanimalhospital.com/clients/15389/images/playful-kitten-6683.jpg" alt="kitten" /></p>
+
+<p>Feel free to change this from an HTML file to a markdown file.</p>
+
+
+    </div>
+  </body>
+</html>
